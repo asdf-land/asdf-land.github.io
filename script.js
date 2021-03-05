@@ -81,3 +81,13 @@ const closeArticle = () => {
     e.style.opacity = "1";
   }
 };
+
+document.onkeydown = e => {
+  e = e || window.event;
+  let key = e.key.toLowerCase();
+  //console.log(key);
+  if(key == 'escape') {
+    e.preventDefault();
+    closeArticle();
+  }
+};
