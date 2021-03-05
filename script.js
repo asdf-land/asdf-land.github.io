@@ -1,3 +1,5 @@
+let article = 'empty';
+
 const articles = {
   "A": {
     "title": "About us",
@@ -66,20 +68,33 @@ const resize = () => {
 };
 
 const showArticle = (letter) => {
-  articleTitle.textContent = articles[letter].title;
-  articleSubtitle.textContent = articles[letter].subtitle;
-  articleContent.innerHTML = articles[letter].article;
-  articleContainer.classList.add('show');
-  for(const e of document.getElementsByClassName('hideOnArticle')) {
-    e.style.opacity = "0";
+  if(article == 'empty') {
+    article = letter;
+    articleTitle.textContent = articles[letter].title;
+    articleSubtitle.textContent = articles[letter].subtitle;
+    articleContent.innerHTML = articles[letter].article;
+    articleContainer.classList.add('show');
+    for(const e of document.getElementsByClassName('hideOnArticle')) {
+      e.style.opacity = "0";
+    }
+    let i = ['A', 'S', 'D', 'F'].indexOf(letter);
+    for(let j = 0; j < document.getElementsByClassName('island').length; j++) {
+      if(j != i) document.getElementsByClassName('island')[j].style.opacity = "0";
+    }
+    centerContainer.classList.add(letter);
   }
 };
 
 const closeArticle = () => {
+  centerContainer.classList.remove(article);
   articleContainer.classList.remove('show');
   for(const e of document.getElementsByClassName('hideOnArticle')) {
     e.style.opacity = "1";
   }
+  for(const e of document.getElementsByClassName('island')) {
+    e.style.opacity = "1";
+  }
+  article = 'empty';
 };
 
 document.onkeydown = e => {

@@ -193,7 +193,7 @@ body {
 
 #centerContainer {
   position: fixed;
-  left: 0;
+  left: 0vw;
   top: 8vh;
   display: flex;
   flex-direction: row;
@@ -201,6 +201,12 @@ body {
   align-items: center;
   height: 84vh;
   width: 100vw;
+  transition-duration: 1.5s;
+}
+
+#decorationContainer {
+  transition-duration: 1.5s;
+  opacity: 1;
 }
 
 .island {
@@ -209,6 +215,7 @@ body {
   cursor: pointer;
   margin-left: 2vw;
   margin-right: 2vw;
+  transition-duration: 1s;
 }
 
 .decoration {
@@ -313,4 +320,20 @@ body {
 .hideOnArticle {
   transition-duration: 1s;
   opacity: 1;
+}
+
+#centerContainer.A {
+  left: 59vw;
+}
+
+#centerContainer.S {
+  left: 45vw;
+}
+
+#centerContainer.D {
+  left: 31vw;
+}
+
+#centerContainer.F {
+  left: 17vw;
 }
