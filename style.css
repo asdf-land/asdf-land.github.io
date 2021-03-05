@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('./resources/fonts/metropolis.css');
+
+body {
+  font-weight: 600;
+  background: linear-gradient(to right top, #619BE8, #69C7C7);
+  color: #333;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Metropolis', 'Noto Sans KR', '나눔바른고딕', arial;
+  letter-spacing: -1px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
+
+#loadingContainer {
+  background-color: #fff;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+}
+
+.hide {
+  transition-duration: .5s;
+  opacity: 0 !important;
+}
+
+#asdfLogo {
+  width: 5vw;
+}
+
+#airplaneContainer {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 1vw;
+  bottom: 2vh;
+}
+
+#airplane {
+  margin-bottom: 0vh;
+  width: 3vw;
+  animation: boing infinite 2s;
+}
+
+@keyframes boing {
+  0% {
+    margin-bottom: 0.5vh;
+  }
+  50% {
+    margin-bottom: 1.5vh;
+  }
+  100% {
+    margin-bottom: 0.5vh;
+  }
+}
+
+#ground {
+  width: 3vw;
+}
+
+#welcomeContainer {
+  transition-duration: 1s;
+  background-color: #fff;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+}
+
+#welcome {
+  opacity: 0;
+  margin-top: 10vh;
+  color: #35558A;
+  font-weight: 700;
+  font-size: 3vh;
+  transition-duration: 1s;
+}
+
+#welcome.fadeIn {
+  opacity: 1 !important;
+  margin-top: 0vh !important;
+}
+
+#welcomeContainer.fadeOut {
+  opacity: 0 !important;
+  height: 0vh !important;
+}
+
+#welcome.fadeOut {
+  opacity: 1 !important;
+  margin-top: 30vh !important;
+}
+
+.mainContainer {
+  display: flex;
+  position: fixed;
+  background-color: white;
+  width: 100vw;
+  height: 8vh;
+}
+
+#top {
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: left;
+}
+
+#topText {
+  font-size: 2.2vh;
+  color: #35558A;
+  margin-left: 1vw;
+}
+
+.strong {
+  font-weight: 800;
+}
+
+#bottom {
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.bottomDivide {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 100%;
+}
+
+#bottomLeft {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#bottomRight {
+  font-size: 2vh;
+  color: #35558A;
+  letter-spacing: 0.3vw;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#bottomText {
+  margin-top: 3px;
+}
+
+#bottomLine {
+  background-color: #35558A;
+  height: 1px;
+  width: 5vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+#firstIcon {
+  margin-left: 1vw;
+}
+
+.icon {
+  cursor: pointer;
+  margin-left: 0.5vw;
+  width: 1.5vw;
+}
