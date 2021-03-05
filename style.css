@@ -8,7 +8,7 @@ body {
   color: #333;
   width: 100vw;
   height: 100vh;
-  margin: 0;
+  padding: 0;
   padding: 0;
   text-align: center;
   font-family: 'Metropolis', 'Noto Sans KR', '나눔바른고딕', arial;
@@ -349,4 +349,115 @@ body {
   width: 100%;
   align-items: center;
   justify-content: space-between;
+}
+
+#islandA {
+  animation: landA;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes landA {
+  0% {
+    padding: 0vh 0vw 0vh 0vw;
+  }
+  10% {
+    padding: 1vh 1vw 0vh 0vw;
+  }
+  25% {
+    padding: 1vh 0vw 1vh 0vw;
+  }
+  40% {
+    padding: 0vh 0vw 1vh 1vw;
+  }
+  60% {
+    padding: 0vh 1vw 0vh 1vw;
+  }
+  80% {
+    padding: 1vh 1vw -1vh 1vw;
+  }
+  100% {
+    padding: 0vh 0vw 0vh 0vw;
+  }
+}
+
+#islandS {
+  animation: landS;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes landS {
+  0% {
+    padding: 1vh 0vw 1vh 0vw;
+  }
+  15% {
+    padding: 1vh 1vw 0vh 0vw;
+  }
+  35% {
+    padding: 0vh 0vw 1vh 1vw;
+  }
+  55% {
+    padding: 1vh 1vw -1vh 1vw;
+  }
+  85% {
+    padding: 0vh 1vw 0vh 1vw;
+  }
+  100% {
+    padding: 1vh 0vw 1vh 0vw;
+  }
+}
+
+#islandD {
+  animation: landD;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes landD {
+  0% {
+    padding: 0vh 0vw 1vh 1vw;
+  }
+  15% {
+    padding: 1vh 1vw 0vh 0vw;
+  }
+  30% {
+    padding: 0vh 0vw -1vh 0vw;
+  }
+  45% {
+    padding: 1vh 0vw 1vh 0vw;
+  }
+  85% {
+    padding: 0vh -1vw 0vh 1vw;
+  }
+  100% {
+    padding: 0vh 0vw 1vh 1vw;
+  }
+}
+
+#islandF {
+  animation: landF;
+  animation-duration: 17s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes landF {
+  0% {
+    padding: 0vh 0vw 0vh 0vw;
+  }
+  15% {
+    padding: 1vh 1vw 0vh 0vw;
+  }
+  20% {
+    padding: 1vh 0vw 1vh 0vw;
+  }
+  50% {
+    padding: 0vh 0vw 1vh 1vw;
+  }
+  70% {
+    padding: 1vh 1vw -1vh 1vw;
+  }
+  100% {
+    padding: 0vh 0vw 0vh 0vw;
+  }
 }
