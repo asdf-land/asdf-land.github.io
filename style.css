@@ -38,6 +38,7 @@ body {
 }
 
 #asdfLogo {
+  min-width: 10vh;
   width: 5vw;
 }
 
@@ -45,11 +46,12 @@ body {
   display: flex;
   flex-direction: column;
   position: fixed;
-  right: 1vw;
-  bottom: 2vh;
+  right: 1em;
+  bottom: 1em;
 }
 
 #airplane {
+  min-width: 5vh;
   margin-bottom: 0vh;
   width: 3vw;
   animation: boing infinite 2s;
@@ -68,6 +70,7 @@ body {
 }
 
 #ground {
+  min-width: 5vh;
   width: 3vw;
 }
 
@@ -122,10 +125,11 @@ body {
   top: 0;
   left: 0;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
 }
 
 #topText {
+  margin-top: 3px;
   font-size: 2.2vh;
   color: #35558A;
   margin-left: 1vw;
@@ -180,7 +184,28 @@ body {
 }
 
 .icon {
+  min-width: 3vh;
   cursor: pointer;
   margin-left: 0.5vw;
   width: 1.5vw;
+}
+
+#centerContainer {
+  position: fixed;
+  left: 0;
+  top: 8vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 84vh;
+  width: 100vw;
+}
+
+.island {
+  min-width: 8vh;
+  width: 10vw;
+  cursor: pointer;
+  margin-left: 2vw;
+  margin-right: 2vw;
 }

@@ -21,3 +21,21 @@ const initialize = () => {
     welcomeContainer.classList.add('fadeOut');
   }, 3000);
 };
+
+window.addEventListener('DOMContentLoaded', () => {
+  resize();
+});
+
+window.onresize = () => {
+  resize();
+};
+
+const resize = () => {
+  if(window.innerHeight / window.innerWidth >= 1) {
+    bottomRight.style.display = 'none';
+    bottomLeft.style.justifyContent = 'center';
+  } else {
+    bottomRight.style.display = 'flex';
+    bottomLeft.style.justifyContent = 'flex-start';
+  }
+};
