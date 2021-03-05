@@ -10,6 +10,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css?ver=1.0">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-26NLQVZH4P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-26NLQVZH4P');
+  </script>
   <title>ASDF Land</title>
 </head>
 <body>
@@ -23,24 +31,38 @@
   <div id="welcomeContainer">
     <span id="welcome">Welcome</span>
   </div>
-  <div id="top" class="mainContainer">
+  <div id="top" class="mainContainer hideOnArticle">
     <span id="topText"><span class="strong">Move and select</span> the land.</span>
   </div>
   <div id="centerContainer">
+    <img src="resources/images/decoration_1.png" id="deco1" class="decoration">
+    <img src="resources/images/decoration_2.png" id="deco2" class="decoration">
+    <img src="resources/images/decoration_3.png" id="deco3" class="decoration">
+    <img src="resources/images/decoration_4.png" id="deco4" class="decoration">
     <img src="resources/images/A.png" class="island" onclick="showArticle('A')">
     <img src="resources/images/S.png" class="island" onclick="showArticle('S')">
     <img src="resources/images/D.png" class="island" onclick="showArticle('D')">
     <img src="resources/images/F.png" class="island" onclick="showArticle('F')">
   </div>
-  <div id="bottom" class="mainContainer">
+  <div id="bottom" class="mainContainer hideOnArticle">
     <div id="bottomLeft" class="bottomDivide">
       <a href="https://github.com/asdf-land" target="_blank"><img src="https://img.icons8.com/material-outlined/48/35558A/github.png" class="icon" id="firstIcon"/></a>
-      <a href="" target="_blank"><img src="https://img.icons8.com/material/48/35558A/facebook-new--v1.png" class="icon"/></a>
+      <a href="https://www.facebook.com/ASDF-asdf-as-is-107290444750590" target="_blank"><img src="https://img.icons8.com/material/48/35558A/facebook-new--v1.png" class="icon"/></a>
       <a href="https://www.instagram.com/asdf_as_is/" target="_blank"><img src="https://img.icons8.com/material/48/35558A/instagram-new--v1.png" class="icon"/></a>
     </div>
     <div id="bottomRight" class="bottomDivide">
       <span id="bottomText"><span class="strong">ASSEMBLED SPECIALISTS</span> IN DIMIGO FOR</span>
       <div id="bottomLine"></div>
+    </div>
+  </div>
+  <div id="articleContainer">
+    <div id="articleContents">
+      <span id="articleTitle"></span>
+      <span id="articleSubtitle"></span>
+      <span id="articleContent"></span>
+    </div>
+    <div id="articleClose" onclick="closeArticle()">
+      <img src="resources/images/close.svg" alt="<">
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.5/lottie.js"></script>

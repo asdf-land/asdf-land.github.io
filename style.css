@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('./resources/fonts/metropolis.css');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@500;700&display=swap');
 
 body {
-  font-weight: 600;
+  font-weight: 500;
   background: linear-gradient(to right top, #619BE8, #69C7C7);
   color: #333;
   width: 100vw;
@@ -208,4 +209,108 @@ body {
   cursor: pointer;
   margin-left: 2vw;
   margin-right: 2vw;
+}
+
+.decoration {
+  position: fixed;
+}
+
+#deco1 {
+  min-width: 2em;
+  width: 2vw;
+  left: 10vw;
+  top: 40vh;
+}
+
+#deco2 {
+  min-width: 5em;
+  width: 10vw;
+  bottom: 20vh;
+  left: 30vw;
+}
+
+#deco3 {
+  min-width: 3em;
+  right: 10vw;
+  bottom: 20vh;
+  width: 6vw;
+}
+
+#deco4 {
+  min-width: 4em;
+  top: 20vh;
+  right: 10vw;
+  width: 6vw;
+}
+
+#articleContainer {
+  filter: drop-shadow(0 0 10px rgba(20, 20, 20, 0.2));
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: -100vw;
+  transition-duration: 1.5s;
+}
+
+#articleContainer.show {
+  left: 0vw;
+}
+
+#articleContents {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10vh;
+  text-align: left;
+  background-color: #fff;
+  width: 65vw;
+  height: 80vh;
+}
+
+#articleClose {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0 50% 50% 0;
+  width: 2vw;
+  height: 5vh;
+}
+
+#articleClose>img {
+  margin-right: 0.5vw;
+  width: 0.8vw;
+}
+
+#articleTitle {
+  font-family: 'Aleo', 'Noto Sans KR', '나눔바른고딕', arial;
+  font-weight: 700;
+  font-size: 7vh;
+  color: #000;
+}
+
+#articleSubtitle {
+  font-family: 'Aleo', 'Noto Sans KR', '나눔바른고딕', arial;
+  font-weight: 500;
+  font-size: 3vh;
+  color: #999;
+}
+
+#articleContent {
+  margin-top: 10vh;
+  font-weight: 400;
+  font-size: 2.5vh;
+  color: #222;
+}
+
+.hideOnArticle {
+  transition-duration: 1s;
+  opacity: 1;
 }
