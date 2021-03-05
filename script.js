@@ -31,7 +31,7 @@ window.onresize = () => {
 };
 
 const resize = () => {
-  if(window.innerHeight / window.innerWidth >= 1) {
+  if(window.innerHeight / window.innerWidth >= 0.7) {
     bottomRight.style.display = 'none';
     bottomLeft.style.justifyContent = 'center';
   } else {
