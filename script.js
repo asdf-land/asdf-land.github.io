@@ -60,10 +60,18 @@ const resize = () => {
     bottomRight.style.display = 'none';
     bottomLeft.style.justifyContent = 'center';
     articleContents.style.width = '100vw';
+    articleClose.style.display = 'none';
+    articleContents.style.padding = '3vh';
+    articleContents.style.height = '94vh';
+    closeBtn.style.display = 'initial';
   } else {
     bottomRight.style.display = 'flex';
     bottomLeft.style.justifyContent = 'flex-start';
     articleContents.style.width = '65vw';
+    articleClose.style.display = 'flex';
+    articleContents.style.padding = '10vh';
+    articleContents.style.height = '80vh';
+    closeBtn.style.display = 'none';
   }
 };
 

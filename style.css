@@ -337,3 +337,16 @@ body {
 #centerContainer.F {
   left: 17vw;
 }
+
+#closeBtn {
+  max-width: 1.5em;
+  min-width: 1em;
+  width: 5vw;
+}
+
+#articleTitleContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
