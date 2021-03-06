@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo:wght@500;700&display=swap');
 
 body {
+  margin: 0;
   font-weight: 500;
   background: linear-gradient(to right top, #619BE8, #69C7C7);
   color: #333;
@@ -14,7 +15,7 @@ body {
   font-family: 'Metropolis', 'Noto Sans KR', '나눔바른고딕', arial;
   letter-spacing: -1px;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
   -webkit-font-smoothing: antialiased;
   user-select: none;
 }
@@ -82,6 +83,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -90,18 +92,40 @@ body {
   opacity: 1;
 }
 
-#welcome {
+.welcome {
   opacity: 0;
   margin-top: 10vh;
   color: #35558A;
-  font-weight: 700;
-  font-size: 3vh;
   transition-duration: 1s;
 }
 
-#welcome.fadeIn {
+#welcome1.fadeIn {
   opacity: 1 !important;
   margin-top: 0vh !important;
+}
+
+#welcome1.fadeOut {
+  opacity: 1 !important;
+  margin-top: 30vh !important;
+}
+
+#welcome1 {
+  font-size: 3.5vh;
+  font-weight: 700;
+}
+
+#welcome2 {
+  margin-top: 0vh;
+  font-size: 2vh;
+  font-weight: 500;
+}
+
+#welcome2.fadeIn {
+  opacity: 1 !important;
+}
+
+#welcome2.fadeOut {
+  opacity: 1 !important;
 }
 
 #welcomeContainer.fadeOut {
@@ -109,22 +133,14 @@ body {
   height: 0vh !important;
 }
 
-#welcome.fadeOut {
-  opacity: 1 !important;
-  margin-top: 30vh !important;
-}
-
 .mainContainer {
   display: flex;
-  position: fixed;
   background-color: white;
   width: 100vw;
   height: 8vh;
 }
 
 #top {
-  top: 0;
-  left: 0;
   align-items: center;
   justify-content: center;
 }
@@ -141,8 +157,6 @@ body {
 }
 
 #bottom {
-  bottom: 0;
-  left: 0;
   align-items: center;
   justify-content: center;
   flex-direction: row;
@@ -192,9 +206,6 @@ body {
 }
 
 #centerContainer {
-  position: fixed;
-  left: 0vw;
-  top: 8vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -202,6 +213,7 @@ body {
   height: 84vh;
   width: 100vw;
   transition-duration: 1.5s;
+  margin-left: 0vw;
 }
 
 #decorationContainer {
@@ -287,8 +299,10 @@ body {
   align-items: center;
   background-color: #fff;
   border-radius: 0 50% 50% 0;
-  width: 2vw;
+  width: 5vh;
   height: 5vh;
+  min-width: 2em;
+  min-height: 2em;
 }
 
 #articleClose>img {
@@ -310,7 +324,7 @@ body {
   color: #999;
 }
 
-#articleContent {
+#articleContentContainer {
   margin-top: 10vh;
   font-weight: 400;
   font-size: 2.5vh;
@@ -323,19 +337,19 @@ body {
 }
 
 #centerContainer.A {
-  left: 59vw;
+  margin-left: 59vw;
 }
 
 #centerContainer.S {
-  left: 45vw;
+  margin-left: 45vw;
 }
 
 #centerContainer.D {
-  left: 31vw;
+  margin-left: 31vw;
 }
 
 #centerContainer.F {
-  left: 17vw;
+  margin-left: 17vw;
 }
 
 #closeBtn {
@@ -460,4 +474,128 @@ body {
   100% {
     padding: 0vh 0vw 0vh 0vw;
   }
+}
+
+.articleDecoration {
+  display: none;
+  transition-duration: 1.5s;
+  align-items: center;
+  border-radius: 0.5em;
+  height: 5vh;
+  opacity: 0;
+}
+
+#articleADeco {
+  width: calc(100% - 1em);
+  flex-direction: row;
+  padding-left: 1em;
+  background: #333;
+  color: #fff;
+  font-size: 3vh;
+}
+
+#articleSDeco {
+  display: none !important;
+}
+
+#articleDDeco {
+  display: none !important;
+}
+
+#articleFDeco {
+  width: 100%;
+  flex-direction: row;
+  background-image: url('./resources/images/nyan-cat-background.gif');
+}
+
+#nyanCatLeft {
+  height: 70%;
+}
+
+.decorationShow {
+  display: flex !important;
+  opacity: 1;
+}
+
+.hightLightBlue {
+  background: #DDEBF1;
+}
+
+.hightLightGreen {
+  background: #e1f7e2;
+}
+
+.hightLightYellow {
+  background: #fffad2;
+}
+
+.hightLightRed {
+  background: #ffdcdc;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 4vh;
+}
+
+.imageInner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 90%;
+}
+
+.imageDescription {
+  width: 100%;
+  text-align: center;
+  font-size: 2vh;
+}
+
+.grayText {
+  color: #999;
+}
+
+.image {
+  filter: drop-shadow(0 0 10px rgba(50, 50, 50, 0.1));
+  border: 1px solid #ddd;
+}
+
+.image1 {
+  width: 48%;
+}
+
+.image2 {
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  margin-top: 5vh;
+  border: none;
+  border-top: 1px solid #bbb;
+}
+
+#animContainer {
+  mix-blend-mode: color-burn;
+  opacity: 0.1;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 }

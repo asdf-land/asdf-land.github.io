@@ -8,7 +8,7 @@
   <meta property="og:description" content="Assembled Specialists in Dimigo For -">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css?ver=1.0">
+  <link rel="stylesheet" href="style.css?publish=1.2">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-26NLQVZH4P"></script>
@@ -29,10 +29,11 @@
     </div>
   </div>
   <div id="welcomeContainer">
-    <span id="welcome">Welcome</span>
+    <span id="welcome1" class="welcome">Welcome</span>
+    <span id="welcome2" class="welcome">섬을 선택하고 ASDF에 대해 알아보세요!</span>
   </div>
   <div id="top" class="mainContainer hideOnArticle">
-    <span id="topText"><span class="strong">Move and select</span> the land.</span>
+    <span id="topText"><span class="strong">Select</span> the land.</span>
   </div>
   <div id="decorationContainer" class="hideOnArticle">
     <img src="resources/images/decoration_1.png" id="deco1" class="decoration">
@@ -41,6 +42,7 @@
     <img src="resources/images/decoration_4.png" id="deco4" class="decoration">
   </div>
   <div id="centerContainer">
+    <div id="animContainer"></div>
     <img src="resources/images/A.png" class="island" id="islandA" onclick="showArticle('A')">
     <img src="resources/images/S.png" class="island" id="islandS" onclick="showArticle('S')">
     <img src="resources/images/D.png" class="island" id="islandD" onclick="showArticle('D')">
@@ -64,13 +66,29 @@
         <img src="https://img.icons8.com/ios-glyphs/64/333333/macos-close.png" id="closeBtn" onclick="closeArticle()"/>
       </div>
       <span id="articleSubtitle"></span>
-      <span id="articleContent"></span>
+      <span id="articleContentContainer">
+        <div id="articleADeco" class="articleDecoration">
+          <span id="introTyping"></span>
+        </div>
+        <div id="articleSDeco" class="articleDecoration">
+
+        </div>
+        <div id="articleDDeco" class="articleDecoration">
+
+        </div>
+        <div id="articleFDeco" class="articleDecoration">
+          <img src="resources/images/nyan-cat.gif" id="nyanCatLeft"/>
+        </div>
+        <br>
+        <span id="articleContent"></span>
+      </span>
     </div>
     <div id="articleClose" onclick="closeArticle()">
       <img src="resources/images/close.svg" alt="<">
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.5/lottie.js"></script>
-  <script src="script.js?ver=1.1"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <script src="script.js?publish=1.2"></script>
 </body>
 </html>
