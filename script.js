@@ -2,7 +2,7 @@ let article = '';
 let remember = '';
 let isMobile = false;
 let lottieAnim;
-let interval;
+let interval1, interval2;
 
 let options = {
   strings: ['asdf', 'asdfasdf', 'asdfasdfasdfasdfasdf', '...', '...asdf', '...', '............asdf'],
@@ -191,7 +191,16 @@ const boardAnimate = () => {
   setTimeout(() => {
     boardText.style.transitionDuration = "20s";
     boardText.style.marginLeft = `-${boardText.offsetWidth}px`;
-  }, 100)
+  }, 100);
+};
+
+const airplaneAnimate = () => {
+  airplaneSvg.style.transitionDuration = "0s";
+  airplaneSvg.style.marginLeft = `-${airplaneSvg.offsetWidth}px`;
+  setTimeout(() => {
+    airplaneSvg.style.transitionDuration = "10s";
+    airplaneSvg.style.marginLeft = `${articleDDeco.offsetWidth}px`;
+  }, 100);
 };
 
 const canvasResize = () => {
@@ -281,12 +290,14 @@ const showArticle = (letter) => {
       if(j != i) document.getElementsByClassName('island')[j].style.opacity = "0";
     }
     if(!isMobile) centerContainer.classList.add(letter);
-    console.log(`article${article}Deco`);
     if(remember) document.getElementById(`article${remember}Deco`).style.display = 'none';
     document.getElementById(`article${letter}Deco`).style.display = 'flex';
     boardAnimate();
-    if(interval) clearInterval(interval);
-    interval = setInterval(boardAnimate, 20100);
+    airplaneAnimate();
+    if(interval1) clearInterval(interval1);
+    interval1 = setInterval(boardAnimate, 20100);
+    if(interval2) clearInterval(interval2);
+    interval2 = setInterval(airplaneAnimate, 10100);
     article = letter;
     remember = letter;
   }

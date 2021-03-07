@@ -513,6 +513,18 @@ body {
   background-repeat: repeat;
 }
 
+#articleDDeco {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-left: 1em;
+  background: linear-gradient(to right top, #62afee, #4fcedf);
+}
+
+#airplaneSvg {
+  height: 100%;
+}
+
 #articleContent {
   line-height: 180%;
 }
