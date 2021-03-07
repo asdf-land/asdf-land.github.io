@@ -318,15 +318,14 @@ body {
 }
 
 #articleTitle {
-  letter-spacing: 0px;
-  font-family: 'Aleo', 'Noto Sans KR', '나눔바른고딕', arial;
+  font-family: 'Metropolis', 'Noto Sans KR', '나눔바른고딕';
   font-weight: 700;
   font-size: 7vh;
   color: #000;
 }
 
 #articleSubtitle {
-  font-family: 'Aleo', 'Noto Sans KR', '나눔바른고딕', arial;
+  font-family: 'Metropolis', 'Noto Sans KR', '나눔바른고딕';
   font-weight: 500;
   font-size: 3vh;
   color: #999;
@@ -490,7 +489,7 @@ body {
   align-items: center;
   border-radius: 0.5em;
   height: 5vh;
-  opacity: 0;
+  margin-bottom: 3vh;
 }
 
 #articleADeco {
@@ -514,26 +513,17 @@ body {
   background-repeat: repeat;
 }
 
+#articleContent {
+  line-height: 180%;
+}
+
 #boardText {
-  animation: boardAnimation;
-  animation-timing-function: linear;
-  animation-duration: 30s;
-  animation-direction: normal;
-  animation-iteration-count: infinite;
+  transition-timing-function: linear;
   white-space: nowrap;
   color: #00eeff;
 }
 
-@keyframes boardAnimation {
-  0% {
-    margin-left: 100%; 
-  }
-  100% {
-    margin-left: -100%;
-  }
-}
-
-#articleDDeco {
+#articleDeco {
   display: none !important;
 }
 
@@ -546,11 +536,6 @@ body {
 
 #nyanCatLeft {
   height: 70%;
-}
-
-.decorationShow {
-  display: flex !important;
-  opacity: 1;
 }
 
 .hightLightBlue {
@@ -634,4 +619,14 @@ hr {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+#cacheContainer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  pointer-events: none;
 }

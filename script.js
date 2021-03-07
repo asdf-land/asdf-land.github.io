@@ -1,6 +1,8 @@
 let article = '';
+let remember = '';
 let isMobile = false;
 let lottieAnim;
+let interval;
 
 let options = {
   strings: ['asdf', 'asdfasdf', 'asdfasdfasdfasdfasdf', '...', '...asdf', '...', '............asdf'],
@@ -18,7 +20,7 @@ const articles = {
     "subtitle": "ASDF를 소개합니다",
     "article": `아이디어가 생각나지 않을 때, 찾아보려던 것이 생각나지 않을 때 우리는 습관적으로 키보드의 <i>asdf</i> 를 누릅니다.<br>
     그러다 아이디어가 떠오르거나 할일이 떠오르면 작업을 시작하죠.<br>
-    <strong>동아리 ASDF</strong>는 이를 모토로 삼고 있습니다. 순간순간 스쳐가는, 갑자기 떠오르는 그 <span class="hightLightBlue">아이디어</span>를 실현해요.<br>
+    <strong>저희의 이름 ASDF</strong>는 여기서 따온 이름입니다. 순간순간 스쳐가는, 갑자기 떠오르는 그 <span class="hightLightBlue">아이디어</span>를 실현해요.<br>
     <span class="hightLightBlue">무의식에서 떠오른 그 아이디어</span>를 바로 실현 시키고자 하는 갈망을 가지고 있죠.<br>
     멤버들의 멋진 아이디어를 실현시키기 위하여 디미고의 전문가들이 뭉쳤습니다.`
   },
@@ -53,8 +55,8 @@ const articles = {
     "title": "Do with us",
     "subtitle": "당신의 꿈, ASDF와 함께",
     "article": `프로그래밍이나 디자인, 영상 제작의 전문가가 아니어도 괜찮습니다.<br>
-    각 분야에 도움을 줄 멤버들이 있습니다.<br>
-    <span class="hightLightYellow">개발의 기초</span>부터 XD, Illustraor과 같은 <span class="hightLightYellow">디자인 툴</span>, Premere Pro 등 <span class="hightLightYellow">영상 편집 툴</span> 까지, ASDF가 여러분을 도와줄 수 있습니다.<br>
+    ASDF에는 각 분야에 도움을 줄 멤버들이 있습니다.<br>
+    <span class="hightLightYellow">개발의 기초</span>부터 본격적인 웹 서비스 개발, XD, Illustraor과 같은 <span class="hightLightYellow">디자인 툴</span>, Premere Pro 등 <span class="hightLightYellow">영상 편집 툴</span> 까지,<br>ASDF가 여러분을 도와줄 수 있습니다.<br>
     선배 멘토와 여러분이 크고 작은 팀을 구성하여 여러분의 아이디어가 실현되는 순간을<br>기획단계부터 서비스 런칭 단계까지, <span class="hightLightYellow">모든 부분에 참여할 수 있습니다.</span>`
   },
   "F": {
@@ -183,6 +185,15 @@ window.addEventListener('DOMContentLoaded', () => {
   resize();
 });
 
+const boardAnimate = () => {
+  boardText.style.transitionDuration = "0s";
+  boardText.style.marginLeft = `${articleSDeco.offsetWidth}px`;
+  setTimeout(() => {
+    boardText.style.transitionDuration = "20s";
+    boardText.style.marginLeft = `-${boardText.offsetWidth}px`;
+  }, 100)
+};
+
 const canvasResize = () => {
   let widthWidth = window.innerWidth;
   let heightWidth = window.innerHeight / 9 * 16;
@@ -258,7 +269,6 @@ const resize = () => {
 
 const showArticle = (letter) => {
   if(article == 'empty') {
-    article = letter;
     articleTitle.textContent = articles[letter].title;
     articleSubtitle.textContent = articles[letter].subtitle;
     articleContent.innerHTML = articles[letter].article;
@@ -271,12 +281,18 @@ const showArticle = (letter) => {
       if(j != i) document.getElementsByClassName('island')[j].style.opacity = "0";
     }
     if(!isMobile) centerContainer.classList.add(letter);
-    document.getElementById(`article${letter}Deco`).classList.add('decorationShow');
+    console.log(`article${article}Deco`);
+    if(remember) document.getElementById(`article${remember}Deco`).style.display = 'none';
+    document.getElementById(`article${letter}Deco`).style.display = 'flex';
+    boardAnimate();
+    if(interval) clearInterval(interval);
+    interval = setInterval(boardAnimate, 20100);
+    article = letter;
+    remember = letter;
   }
 };
 
 const closeArticle = () => {
-  document.getElementById(`article${article}Deco`).classList.remove('decorationShow');
   if(!isMobile) centerContainer.classList.remove(article);
   articleContainer.classList.remove('show');
   for(const e of document.getElementsByClassName('hideOnArticle')) {
@@ -295,18 +311,22 @@ document.onkeydown = e => {
   if(key == 'escape') {
     e.preventDefault();
     closeArticle();
-  } else if(article == 'empty') {
+  } else {
     if(key == 'a') {
       e.preventDefault();
+      if(article != 'empty' && article != '') closeArticle();
       showArticle('A');
     } else if(key == 's') {
       e.preventDefault();
+      if(article != 'empty' && article != '') closeArticle();
       showArticle('S');
     } else if(key == 'd') {
       e.preventDefault();
+      if(article != 'empty' && article != '') closeArticle();
       showArticle('D');
     } else if(key == 'f') {
       e.preventDefault();
+      if(article != 'empty' && article != '') closeArticle();
       showArticle('F');
     }
   }
