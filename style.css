@@ -530,7 +530,7 @@ body {
 }
 
 #boardText {
-  transition-timing-function: linear;
+  width: 100%;
   white-space: nowrap;
   color: #00eeff;
 }

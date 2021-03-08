@@ -2,7 +2,7 @@ let article = '';
 let remember = '';
 let isMobile = false;
 let lottieAnim;
-let interval1, interval2;
+let interval2;
 
 let options = {
   strings: ['asdf', 'asdfasdf', 'asdfasdfasdfasdfasdf', '...', '...asdf', '...', '............asdf'],
@@ -30,23 +30,23 @@ const articles = {
     "article": `우리는 2021년에 이런 활동을 할 예정이에요.
     <ol>
       <li>
-        유튜브 채널 운영🌈
+        <strong>유튜브 채널 운영🌈</strong>
         <dd>- ASDF의 활동을 <span class="hightLightGreen">유튜브에 기록</span>해요.</dd>
       </li>
       <li>
-        웹&그래픽 디자인🎨
+        <strong>웹&그래픽 디자인🎨</strong>
         <dd>- 애니메이션과 재미있는 요소들을 활용해 <span class="hightLightGreen">다채로운 디자인</span>을 해봐요.</dd>
       </li>
       <li>
-        아이디어 실현🎈
+        <strong>아이디어 실현🎈</strong>
         <dd>- 서비스, 게임, 그 무엇이든 여러분이 생각한 <span class="hightLightGreen">아이디어를 웹에서 실현</span>해요.<br>&nbsp;&nbsp;떠올린 아이디어를 실현하는데 필요한 능력을 기르고, 기획단계부터 서비스 런칭까지의 모든 작업을 여러분이 해보아요.</dd>
       </li>
       <li>
-        현금없는 디미고 만들기: 디미페이💳
+        <strong>현금없는 디미고 만들기: 디미페이💳</strong>
         <dd>- 디미고인 모두가 사용할 수 있는 <span class="hightLightGreen">교내 간편결제 서비스</span> 디미페이를 만들어봐요.💸</dd>
       </li>
       <li>
-        대회🏆
+        <strong>대회🏆</strong>
         <dd>- 멤버들과 함께 <span class="hightLightGreen">대회에서 추억을</span> 쌓아보아요.</dd>
       </li>
     </ol>`
@@ -106,14 +106,14 @@ const articles = {
       </div>
     </div>
     <div class="imageDescription">자동 줌 수업 접속 웹페이지, Online Schedule <span class="grayText">- 강혁진 디자인, 개발</span></div>
-    <br><br>
+    <br>
     <span class="description">2020년, 코로나 19 사태로 인해 전국 모든 학교가 원격으로 수업을 진행하게 되었습니다. 매번 Zoom 코드를 수동으로 입력하여 접속하기 번거로웠던 문제를 해결하기 위해 탄생한 <span class="hightLightRed">Online Schedule</span>은 웹 기반 서비스로, 페이지를 열어두기만 하면 각 반의 시간표에 따라 자동으로 줌 수업에 접속됩니다.</span>
     <div class="imageContainer">
       <div class="imageInner">
         <img src="resources/images/projects/9.png" class="image image2">
       </div>
     </div>
-    <span class="description">원격 기간 중, <strong>19기 학생 약 80% 이상</strong>이 이 서비스를 이용해 원격 수업에 접속하였습니다.
+    <span class="description">원격 기간 중, <strong>19기 학생 약 80% 이상</strong>이 이 서비스를 이용해 원격 수업에 접속하였습니다.<br>
     <h2>게임</h2>
     <div class="imageContainer">
       <div class="imageInner">
@@ -150,17 +150,17 @@ const initialize = () => {
   loadingContainer.classList.add('hide');
   setTimeout(() => {
     loadingContainer.style.display = 'none';
-  }, 500);
+  }, 300);
   setTimeout(() => {
     welcome1.classList.add('fadeIn');
     welcome2.classList.add('fadeIn');
-  }, 1000);
+  }, 700);
   setTimeout(() => {
     welcome1.classList.add('fadeOut');
     welcome2.classList.add('fadeOut');
     welcomeContainer.classList.add('fadeOut');
     article = 'empty';
-  }, 5000);
+  }, 3000);
 };
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -185,20 +185,11 @@ window.addEventListener('DOMContentLoaded', () => {
   resize();
 });
 
-const boardAnimate = () => {
-  boardText.style.transitionDuration = "0s";
-  boardText.style.marginLeft = `${articleSDeco.offsetWidth}px`;
-  setTimeout(() => {
-    boardText.style.transitionDuration = "20s";
-    boardText.style.marginLeft = `-${boardText.offsetWidth}px`;
-  }, 100);
-};
-
 const airplaneAnimate = () => {
   airplaneSvg.style.transitionDuration = "0s";
   airplaneSvg.style.marginLeft = `-${airplaneSvg.offsetWidth}px`;
   setTimeout(() => {
-    airplaneSvg.style.transitionDuration = "10s";
+    airplaneSvg.style.transitionDuration = "15s";
     airplaneSvg.style.marginLeft = `${articleDDeco.offsetWidth}px`;
   }, 100);
 };
@@ -292,12 +283,9 @@ const showArticle = (letter) => {
     if(!isMobile) centerContainer.classList.add(letter);
     if(remember) document.getElementById(`article${remember}Deco`).style.display = 'none';
     document.getElementById(`article${letter}Deco`).style.display = 'flex';
-    boardAnimate();
     airplaneAnimate();
-    if(interval1) clearInterval(interval1);
-    interval1 = setInterval(boardAnimate, 20100);
     if(interval2) clearInterval(interval2);
-    interval2 = setInterval(airplaneAnimate, 10100);
+    interval2 = setInterval(airplaneAnimate, 15100);
     article = letter;
     remember = letter;
   }
