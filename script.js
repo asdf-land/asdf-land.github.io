@@ -27,36 +27,32 @@ const articles = {
   "S": {
     "title": "See us",
     "subtitle": "ASDF의 큰그림",
-    "article": `우리는 2021년에 이런 활동을 할 예정이에요.
+    "article": `우리는 2022년에 이런 활동을 할 예정이에요.
     <ol>
       <li>
-        <strong>유튜브 채널 운영🌈</strong>
-        <dd>- ASDF의 활동을 <span class="hightLightGreen">유튜브에 기록</span>해요.</dd>
+        <strong>앱&웹 개발 📱</strong>
+        <dd>- 2022년에는 <span class="hightLightGreen">앱&웹 개발을 위주</span>로 활동할 예정이에요.<br>&nbsp;&nbsp;우리가 상상했던 앱들을 스스로 <span class="hightLightGreen">눈으로 보고 손으로 만질 수 있게 구현</span>할 수 있어요.<br>&nbsp;&nbsp;<span class="hightLightGreen">iOS를 주로 할 예정</span>이고, 맥북이 없어도 된답니다.</dd>
       </li>
       <li>
-        <strong>웹&그래픽 디자인🎨</strong>
-        <dd>- 애니메이션과 재미있는 요소들을 활용해 <span class="hightLightGreen">다채로운 디자인</span>을 해봐요.</dd>
+        <strong>앱&웹 디자인 🎨</strong>
+        <dd>- 유저 친화적인 디자인을 배우고, 여러 인터렉션과 재미있는 요소들을 활용해 <span class="hightLightGreen">다채로운 디자인</span>을 해봐요.<br>&nbsp;&nbsp;여러분이 디자인한 것이 실제 서비스까지 이루어질거에요.</dd>
       </li>
       <li>
-        <strong>아이디어 실현🎈</strong>
-        <dd>- 서비스, 게임, 그 무엇이든 여러분이 생각한 <span class="hightLightGreen">아이디어를 웹에서 실현</span>해요.<br>&nbsp;&nbsp;떠올린 아이디어를 실현하는데 필요한 능력을 기르고, 기획단계부터 서비스 런칭까지의 모든 작업을 여러분이 해보아요.</dd>
+        <strong>아이디어 실현 🎈</strong>
+        <dd>- 서비스, 게임, 그 무엇이든 여러분이 생각한 <span class="hightLightGreen">아이디어를 ASDF에서 실현</span>해요.<br>&nbsp;&nbsp;떠올린 아이디어를 실현하는데 필요한 능력을 기르고, 기획단계부터 서비스 런칭까지의 모든 작업을 여러분이 해보아요.</dd>
       </li>
       <li>
-        <strong>현금없는 디미고 만들기: 디미페이💳</strong>
-        <dd>- 디미고인 모두가 사용할 수 있는 <span class="hightLightGreen">교내 간편결제 서비스</span> 디미페이를 만들어봐요.💸</dd>
-      </li>
-      <li>
-        <strong>대회🏆</strong>
-        <dd>- 멤버들과 함께 <span class="hightLightGreen">대회에서 추억을</span> 쌓아보아요.</dd>
+        <strong>대회 🏆</strong>
+        <dd>- 디미고 전문가들로 뭉친 멤버들과 함께 <span class="hightLightGreen">대회에서 추억</span>을 쌓아보아요.</dd>
       </li>
     </ol>`
   },
   "D": {
     "title": "Do with us",
     "subtitle": "당신의 꿈, ASDF와 함께",
-    "article": `프로그래밍이나 디자인, 영상 제작의 전문가가 아니어도 괜찮습니다.<br>
+    "article": `프로그래밍이나 디자인의 전문가가 아니어도 괜찮습니다.<br>
     ASDF에는 각 분야에 도움을 줄 멤버들이 있습니다.<br>
-    <span class="hightLightYellow">개발의 기초</span>부터 본격적인 웹 서비스 개발, XD, Illustraor과 같은 <span class="hightLightYellow">디자인 툴</span>, Premere Pro 등 <span class="hightLightYellow">영상 편집 툴</span> 까지,<br>ASDF가 여러분을 도와줄 수 있습니다.<br>
+    <span class="hightLightYellow">개발의 기초</span>부터 본격적인 앱 및 웹 서비스 개발, Adobe XD, Illustraor과 같은 <span class="hightLightYellow">디자인 툴</span>까지,<br>ASDF가 여러분을 도와줄 수 있습니다.<br>
     선배 멘토와 여러분이 크고 작은 팀을 구성하여 여러분의 아이디어가 실현되는 순간을<br>기획단계부터 서비스 런칭 단계까지, <span class="hightLightYellow">모든 부분에 참여할 수 있습니다.</span>`
   },
   "F": {
