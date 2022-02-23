@@ -95,7 +95,15 @@ const articles = {
     <div class="imageDescription">아이콘 디자인 <span class="grayText">- 강채린 디자인</span></div>
     <br><br>
     <span class="description">일러스트레이터의 <span class="hightLightRed">펜툴/도형으로 만든 아이콘</span>입니다.</span>
-    <h2>웹</h2>
+    <div class="imageContainer">
+      <div class="imageInner">
+        <img src="resources/images/projects/20/1.png" class="image image2">
+      </div>
+    </div>
+    <div class="imageDescription">앱 디자인 <span class="grayText">- 이재한 디자인</span></div>
+    <br><br>
+    <span class="description">Xd를 이용하여 원하는 목표의 달성을 도와주는 <span class="hightLightRed">앱을 디자인</span>했습니다.</span>
+    <h2>웹&앱</h2>
     <div class="imageContainer">
       <div class="imageInner">
         <img src="resources/images/projects/8.png" class="image image2">
@@ -110,6 +118,34 @@ const articles = {
       </div>
     </div>
     <span class="description">원격 기간 중, <strong>19기 학생 약 80% 이상</strong>이 이 서비스를 이용해 원격 수업에 접속하였습니다.<br>
+    <div class="imageContainer">
+      <div class="imageInner">
+        <img src="resources/images/projects/20/2.png" class="image image2">
+      </div>
+    </div>
+    <div class="imageDescription">커밋 관리 앱, <strong>초록잔디</strong> <span class="grayText">- 김아인 iOS 개발</span></div>
+    <br>
+    <span class="description">개발자를 위한 1일 1커밋 관리 앱인 <span class="hightLightRed">초록잔디</span>를 개발했습니다.</span>
+    <br>
+    <a href="https://github.com/kimain050401/green-grass-ios" target="_blank">Github ></a>
+    <div class="imageContainer">
+      <div class="imageInner">
+        <img src="resources/images/projects/20/3.png" class="image image2">
+      </div>
+    </div>
+    <div class="imageDescription">자율학습 위치표기 시스템, <strong>디미고미</strong> <span class="grayText">- 김아인 Web, iOS, Back-end, Chatbot 개발</span></div>
+    <br>
+    <span class="description">자율학습 시간에 내 위치를 편리하게 등록할 수 있는 <span class="hightLightRed">디미고미</span> 시스템을 개발했습니다.</span>
+    <br>
+    <a href="https://github.com/kimain050401/dimigome-web" target="_blank">Github ></a>
+    <div class="imageContainer">
+      <div class="imageInner">
+        <img src="resources/images/projects/20/4.png" class="image image2">
+      </div>
+    </div>
+    <div class="imageDescription"><strong>메이커스</strong> <span class="grayText">- 이종민 Front-end 개발</span></div>
+    <br>
+    <span class="description">프로젝트 아이디어를 공유하고 함께 할 인원을 모집할 수 있는 <span class="hightLightRed">메이커스</span>의 프론트엔드를 개발했습니다.</span>
     <h2>게임</h2>
     <div class="imageContainer">
       <div class="imageInner">
