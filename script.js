@@ -58,58 +58,24 @@ const articles = {
   "F": {
     "title": "Feel us",
     "subtitle": "ASDF 멤버들의 열정",
-    "article": `동아리 설립 전부터 ASDF 멤버들은 자신의 분야에 <span class="hightLightRed">최선을 다해 열정적으로 참여</span>했습니다.<br>ASDF 멤버들이 이루어낸 <span class="hightLightRed">작품들 중 일부</span>를 여러분께 소개해 드립니다.
-    <h2>디자인</h2>
-    <div class="imageContainer">
-      <div class="imageInner">
-        <img src="resources/images/projects/1.jpg" class="image image1">
-        <img src="resources/images/projects/2.jpg" class="image image1">
-      </div>
-    </div>
-    <div class="imageDescription">웹 컨셉 디자인 <span class="grayText">- 김세령 디자인</span></div>
-    <br><br>
-    <span class="description">웹페이지의 <span class="hightLightRed">컨셉 디자인 이미지</span>입니다. Adobe XD, Illustrator 를 이용하여 웹 페이지의 <span class="hightLightRed">디테일을 구체화</span>했습니다.</span>
-    <div class="imageContainer">
-      <div class="imageInner">
-        <img src="resources/images/projects/3.png" class="image image1">
-        <img src="resources/images/projects/4.png" class="image image1">
-      </div>
-    </div>
-    <div class="imageDescription">카드뉴스 디자인 <span class="grayText">- 김세령 디자인</span></div>
-    <br><br>
-    <span class="description">디미고 기숙사 생활에서의 <span class="hightLightRed">주의 사항이나 조언</span>을 카드뉴스로 디자인하여 소개하였습니다. XD와 일러스트레이터 등을 사용해 디자인하였습니다.</span>
-    <div class="imageContainer">
-      <div class="imageInner">
-        <img src="resources/images/projects/5.png" class="image image1">
-        <img src="resources/images/projects/6.png" class="image image1">
-      </div>
-    </div>
-    <div class="imageDescription">카드 뉴스, 일러스트 디자인 <span class="grayText">- 강채린 디자인</span></div>
-    <br><br>
-    <span class="description">디미고 익명 게시판인 디대숲에서 생기는 문제점과 해결방안을 <span class="hightLightRed">포토샵을 통해 카드뉴스로 디자인</span>하여 소개하였습니다.</span>
-    <div class="imageContainer">
-      <div class="imageInner">
-        <img src="resources/images/projects/7.png" class="image image2">
-      </div>
-    </div>
-    <div class="imageDescription">아이콘 디자인 <span class="grayText">- 강채린 디자인</span></div>
-    <br><br>
-    <span class="description">일러스트레이터의 <span class="hightLightRed">펜툴/도형으로 만든 아이콘</span>입니다.</span>
+    "article": `ASDF 멤버들은 2021년 한 해 자신의 분야에 <span class="hightLightRed">최선을 다해 참여</span>했습니다.<br>ASDF 멤버들이 이루어낸 <span class="hightLightRed">작품들 중 일부</span>를 여러분께 소개해 드립니다.
+    <h2>웹, 앱 서비스</h2>
     <div class="imageContainer">
       <div class="imageInner">
         <img src="resources/images/projects/20/1.png" class="image image2">
       </div>
     </div>
-    <div class="imageDescription">앱 디자인 <span class="grayText">- 이재한 디자인</span></div>
-    <br><br>
-    <span class="description">Xd를 이용하여 원하는 목표의 달성을 도와주는 <span class="hightLightRed">앱을 디자인</span>했습니다.</span>
-    <h2>웹&앱</h2>
+    <div class="imageDescription">목표 관리 앱,<strong>모두 리스트</strong><span class="grayText">- 20기 이재한, 19기 강혁진 Front-end | 19기 이택준 Back-end </span>
+    <a class="githubLink" href="https://github.com/modoolist" target="_blank"><img class="github" src="resources/images/github.png"></a>
+    </div>
+    <br>
+    <span class="description">원하는 목표의 달성을 도와주는 앱<span class="hightLightRed">모두 리스트</span>를  기획, 디자인, 개발했습니다.</span>
     <div class="imageContainer">
       <div class="imageInner">
         <img src="resources/images/projects/8.png" class="image image2">
       </div>
     </div>
-    <div class="imageDescription">자동 줌 수업 접속 웹페이지, Online Schedule <span class="grayText">- 강혁진 디자인, 개발</span></div>
+    <div class="imageDescription">자동 줌 수업 접속 웹페이지, <strong>Online Schedule</strong> <span class="grayText">- 19기 강혁진 디자인, 개발</span><a class="githubLink" href="https://github.com/HyeokjinKang/online-schedule" target="_blank"><img class="github" src="resources/images/github.png"></a></div>
     <br>
     <span class="description">2020년, 코로나 19 사태로 인해 전국 모든 학교가 원격으로 수업을 진행하게 되었습니다. 매번 Zoom 코드를 수동으로 입력하여 접속하기 번거로웠던 문제를 해결하기 위해 탄생한 <span class="hightLightRed">Online Schedule</span>은 웹 기반 서비스로, 페이지를 열어두기만 하면 각 반의 시간표에 따라 자동으로 줌 수업에 접속됩니다.</span>
     <div class="imageContainer">
@@ -123,47 +89,104 @@ const articles = {
         <img src="resources/images/projects/20/2.png" class="image image2">
       </div>
     </div>
-    <div class="imageDescription">커밋 관리 앱, <strong>초록잔디</strong> <span class="grayText">- 김아인 iOS 개발</span></div>
+    <div class="imageDescription">커밋 관리 앱, <strong>초록잔디</strong> <span class="grayText">- 20기 김아인 iOS</span>
+    <a class="githubLink" href="https://github.com/kimain050401/green-grass-ios" target="_blank"><img class="github" src="resources/images/github.png"></a>
+    </div>
     <br>
     <span class="description">개발자를 위한 1일 1커밋 관리 앱인 <span class="hightLightRed">초록잔디</span>를 개발했습니다.</span>
     <br>
-    <a href="https://github.com/kimain050401/green-grass-ios" target="_blank">Github ></a>
     <div class="imageContainer">
       <div class="imageInner">
         <img src="resources/images/projects/20/3.png" class="image image2">
       </div>
     </div>
-    <div class="imageDescription">자율학습 위치표기 시스템, <strong>디미고미</strong> <span class="grayText">- 김아인 Web, iOS, Back-end, Chatbot 개발</span></div>
+    <div class="imageDescription">자율학습 위치표기 시스템, <strong>디미고미</strong> <span class="grayText">- 20기 김아인 Web, iOS, Back-end, Chatbot</span>
+    <a class="githubLink" href="https://github.com/kimain050401/dimigome-web" target="_blank"><img class="github" src="resources/images/github.png"></a>
+    </div>
     <br>
     <span class="description">자율학습 시간에 내 위치를 편리하게 등록할 수 있는 <span class="hightLightRed">디미고미</span> 시스템을 개발했습니다.</span>
     <br>
-    <a href="https://github.com/kimain050401/dimigome-web" target="_blank">Github ></a>
     <div class="imageContainer">
       <div class="imageInner">
         <img src="resources/images/projects/20/4.png" class="image image2">
       </div>
     </div>
-    <div class="imageDescription"><strong>메이커스</strong> <span class="grayText">- 이종민 Front-end 개발</span></div>
+    <div class="imageDescription"><strong>메이커스</strong> <span class="grayText">- 20기 이종민 Front-end</span></div>
     <br>
     <span class="description">프로젝트 아이디어를 공유하고 함께 할 인원을 모집할 수 있는 <span class="hightLightRed">메이커스</span>의 프론트엔드를 개발했습니다.</span>
-    <h2>게임</h2>
     <div class="imageContainer">
       <div class="imageInner">
-        <img src="resources/images/projects/10.png" class="image image2">
+        <img src="resources/images/projects/19/1.png" class="image image2">
       </div>
     </div>
-    <div class="imageDescription">웹 기반 리듬게임, <strong>URLATE</strong> <span class="grayText">- 강혁진 디자인, 개발중</span></div>
-    <br><br>
-    <span class="description">URLATE는 <span class="hightLightRed">리듬탄막슈팅게임</span>입니다. 순수 웹기술로만 제작된 리듬게임 URLATE는 크라우드 펀딩 플랫폼에서 <span class="hightLightRed">목표액 대비 122%를 성공적으로 펀딩</span>받아 현재 출시를 준비하고 있습니다.</span>
-    <h2>하드웨어</h2>
+    <div class="imageDescription"><strong>Liber</strong> <span class="grayText">- 19기 김세령 기획, 디자인, 퍼블리싱</span></div>
+    <br>
+    <span class="description">자유롭게 멤버를 모아 북클럽을 만들어 보다 효율적으로 독서 활동을 할 수 있는 북클럽 서비스 <span class="hightLightRed">리버</span>을 개발했습니다.</span>
     <div class="imageContainer">
       <div class="imageInner">
-        <img src="resources/images/projects/11.jpg" class="image image2">
+        <img src="resources/images/projects/19/2.png" class="image image2">
       </div>
     </div>
-    <div class="imageDescription">프로펠러 하나만으로 비행하는 드론, <strong>Wing-One</strong> <span class="grayText">- 이원호 설계, 개발중</span></div>
-    <br><br>
-    <span class="description">기존의 4윙 드론과 다르게 <span class="hightLightRed">하나의 프로펠러만으로 비행</span>하는 드론을 개발중입니다. 반작용을 상쇄하는 리액션 휠을 추가하여 기술적인 문제를 해결한 설계를 하였습니다. 현제 프로토타입 제작을 완료하여 테스트 중입니다.</span>
+    <br>
+    <div class="imageDescription"><span class="imageDescriptionSpan">모두를 위한 키오스크,<strong>Axis</strong> <span class="grayText">- 19기 김세령 기획, 디자인 | 19기 강혁진 Front-end</span></span><span class="imageDescriptionSpan">2021 삼성SDS-JA Hackathon 우수상 수상작</span></div>
+    <br>
+    <span class="description">사회적 약자부터 사회 구성원 모두가 편리하게 이용할 수 있는 평등한 키오스크 <span class="hightLightRed">Axis</span>을 개발했습니다.</span>
+    <br>
+    <div class="imageContainer">
+      <div class="imageInner">
+        <img src="resources/images/projects/19/3.png" class="image image2">
+      </div>
+    </div>
+    <div class="imageDescription"><span class="imageDescriptionSpan">스마트 분리수거 플랫폼,<strong>버려버려</strong> <span class="grayText">- 19기 민예담 기획, 디자인 | 19기 이택준 기획, 디자인, Back-end</span><a class="githubLink" href="https://github.com/coding-campas-10" target="_blank"><img class="github" src="resources/images/github.png"></a></span><span class="imageDescriptionSpan">2021 삼성SDS-JA Hackathon 결선 진출작</span></div>
+    <br>
+    <span class="description">올바른 분리수거를 위한 스마트 분리수거 플랫폼 <span class="hightLightRed">버려버려</span>를 개발했습니다.</span>
+    <br>
+    <div class="imageContainer">
+      <div class="imageInner">
+        <img src="resources/images/projects/19/4.png" class="image image2">
+      </div>
+    </div>
+    <div class="imageDescription"><span class="imageDescriptionSpan">AI 기반 도슨팅 서비스,<strong>이게모야</strong> <span class="grayText">- 19기 강혁진 디자인, Front-end | 19기 이택준 디자인, Back-end</span><a class="githubLink" href="https://github.com/igemoya" target="_blank"><img class="github" src="resources/images/github.png"></a></span><span class="imageDescriptionSpan">SK플래닛 2021 STA+C 결선 진출작</span></div>
+    <br>
+    <span class="description">고궁, 미술관, 박물관 등에서 Vision AI를 이용해 도슨팅을 제공하는 서비스 <span class="hightLightRed">이게모야</span>를 개발했습니다.</span>
+    <br>
+    <div class="imageContainer">
+      <div class="imageInner">
+        <img src="resources/images/projects/19/8.png" class="image image2">
+      </div>
+    </div>
+    <div class="imageDescription"><span class="imageDescriptionSpan"><strong>당신의 작품을, 널리</strong> <span class="grayText">- 19기 김세령 기획, 디자인</span></span><span class="imageDescriptionSpan">SK플래닛 2020 STA+C 우수상 수상작</span></div>
+    <br>
+    <span class="description">무명 예술가들을 세상에 알리고 관람자가 시각적으로 편리함을 느낄 수 있는 온라인 전시회 서비스 <span class="hightLightRed">널리</span>를 개발했습니다.</span>
+    <br>
+    <h2>Artworks</h2>
+    <div class="imageContainer">
+      <div class="imageInner">
+        <img src="resources/images/projects/19/5.png" class="image image2">
+      </div>
+    </div>
+    <div class="imageDescription"><span class="imageDescriptionSpan"><strong>카드뉴스</strong> <span class="grayText">- 19기 강채린 디자인</span></div>
+    <br>
+    <span class="description">2021년 ASDF 동아리 소개 카드뉴스를 디자인했습니다. Adobe XD와 Illustrator를 이용해 작업했습니다.</span>
+    <br>
+    <div class="imageContainer">
+      <div class="imageInner">
+        <img src="resources/images/projects/19/6.png" class="image image2">
+      </div>
+    </div>
+    <div class="imageDescription"><span class="imageDescriptionSpan"><strong>포스터</strong> <span class="grayText">- 19기 김세령 디자인</span></div>
+    <br>
+    <span class="description">ASDF 동아리 홍보 포스터와 소설 '서울, 1964년 겨울' 소개 포스터를 디자인했습니다. Adobe Illustrator를 이용해 작업했습니다.</span>
+    <br>
+    <div class="imageContainer">
+      <div class="imageInner">
+        <img src="resources/images/projects/19/7.png" class="image image2">
+      </div>
+    </div>
+    <div class="imageDescription"><span class="imageDescriptionSpan"><strong>로고, 아트워크</strong> <span class="grayText">- 19기 김세령 디자인</span></div>
+    <br>
+    <span class="description">ASDF 동아리 로고와 아트워크를 작업했습니다. 동아리 브랜딩과 정체성에 집중한 작업물입니다. Adobe XD와 Illustrator를 이용해 작업했습니다.</span>
+    <br>
     `
   },
 }
