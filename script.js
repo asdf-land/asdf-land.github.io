@@ -62,6 +62,34 @@ const articles = {
     <h2>웹, 앱 서비스</h2>
     <div class="imageContainer">
       <div class="imageInner">
+        <img src="resources/images/projects/19/2.png" class="image image2">
+      </div>
+    </div>
+    <br>
+    <div class="imageDescription"><span class="imageDescriptionSpan">모두를 위한 키오스크,<strong>Axis</strong> <span class="grayText">- 19기 김세령 기획, 디자인 | 19기 강혁진 Front-end</span></span><span class="imageDescriptionSpan">2021 삼성SDS-JA Hackathon 우수상 수상작</span></div>
+    <br>
+    <span class="description">사회적 약자부터 사회 구성원 모두가 편리하게 이용할 수 있는 평등한 키오스크 <span class="hightLightRed">Axis</span>을 개발했습니다.</span>
+    <br>
+    <div class="imageContainer">
+      <div class="imageInner">
+        <img src="resources/images/projects/19/3.png" class="image image2">
+      </div>
+    </div>
+    <div class="imageDescription"><span class="imageDescriptionSpan">스마트 분리수거 플랫폼,<strong>버려버려</strong> <span class="grayText">- 19기 민예담 기획, 디자인 | 19기 이택준 기획, 디자인, Back-end</span><a class="githubLink" href="https://github.com/coding-campas-10" target="_blank"><img class="github" src="resources/images/github.png"></a></span><span class="imageDescriptionSpan">2021 삼성SDS-JA Hackathon 결선 진출작</span></div>
+    <br>
+    <span class="description">올바른 분리수거를 위한 스마트 분리수거 플랫폼 <span class="hightLightRed">버려버려</span>를 개발했습니다.</span>
+    <br>
+    <div class="imageContainer">
+      <div class="imageInner">
+        <img src="resources/images/projects/19/4.png" class="image image2">
+      </div>
+    </div>
+    <div class="imageDescription"><span class="imageDescriptionSpan">AI 기반 도슨팅 서비스,<strong>이게모야</strong> <span class="grayText">- 19기 강혁진 디자인, Front-end | 19기 이택준 디자인, Back-end</span><a class="githubLink" href="https://github.com/igemoya" target="_blank"><img class="github" src="resources/images/github.png"></a></span><span class="imageDescriptionSpan">SK플래닛 2021 STA+C 결선 진출작</span></div>
+    <br>
+    <span class="description">고궁, 미술관, 박물관 등에서 Vision AI를 이용해 도슨팅을 제공하는 서비스 <span class="hightLightRed">이게모야</span>를 개발했습니다.</span>
+    <br>
+    <div class="imageContainer">
+      <div class="imageInner">
         <img src="resources/images/projects/20/1.png" class="image image2">
       </div>
     </div>
@@ -69,21 +97,7 @@ const articles = {
     <a class="githubLink" href="https://github.com/modoolist" target="_blank"><img class="github" src="resources/images/github.png"></a>
     </div>
     <br>
-    <span class="description">원하는 목표의 달성을 도와주는 앱<span class="hightLightRed">모두 리스트</span>를  기획, 디자인, 개발했습니다.</span>
-    <div class="imageContainer">
-      <div class="imageInner">
-        <img src="resources/images/projects/8.png" class="image image2">
-      </div>
-    </div>
-    <div class="imageDescription">자동 줌 수업 접속 웹페이지, <strong>Online Schedule</strong> <span class="grayText">- 19기 강혁진 디자인, 개발</span><a class="githubLink" href="https://github.com/HyeokjinKang/online-schedule" target="_blank"><img class="github" src="resources/images/github.png"></a></div>
-    <br>
-    <span class="description">2020년, 코로나 19 사태로 인해 전국 모든 학교가 원격으로 수업을 진행하게 되었습니다. 매번 Zoom 코드를 수동으로 입력하여 접속하기 번거로웠던 문제를 해결하기 위해 탄생한 <span class="hightLightRed">Online Schedule</span>은 웹 기반 서비스로, 페이지를 열어두기만 하면 각 반의 시간표에 따라 자동으로 줌 수업에 접속됩니다.</span>
-    <div class="imageContainer">
-      <div class="imageInner">
-        <img src="resources/images/projects/9.png" class="image image2">
-      </div>
-    </div>
-    <span class="description">원격 기간 중, <strong>19기 학생 약 80% 이상</strong>이 이 서비스를 이용해 원격 수업에 접속하였습니다.<br>
+    <span class="description">원하는 목표의 달성을 도와주는 앱 <span class="hightLightRed">모두 리스트</span>를  기획, 디자인, 개발했습니다.</span>
     <div class="imageContainer">
       <div class="imageInner">
         <img src="resources/images/projects/20/2.png" class="image image2">
@@ -116,49 +130,35 @@ const articles = {
     <span class="description">프로젝트 아이디어를 공유하고 함께 할 인원을 모집할 수 있는 <span class="hightLightRed">메이커스</span>의 프론트엔드를 개발했습니다.</span>
     <div class="imageContainer">
       <div class="imageInner">
-        <img src="resources/images/projects/19/1.png" class="image image2">
-      </div>
-    </div>
-    <div class="imageDescription"><strong>Liber</strong> <span class="grayText">- 19기 김세령 기획, 디자인, 퍼블리싱</span></div>
-    <br>
-    <span class="description">자유롭게 멤버를 모아 북클럽을 만들어 보다 효율적으로 독서 활동을 할 수 있는 북클럽 서비스 <span class="hightLightRed">리버</span>을 개발했습니다.</span>
-    <div class="imageContainer">
-      <div class="imageInner">
-        <img src="resources/images/projects/19/2.png" class="image image2">
-      </div>
-    </div>
-    <br>
-    <div class="imageDescription"><span class="imageDescriptionSpan">모두를 위한 키오스크,<strong>Axis</strong> <span class="grayText">- 19기 김세령 기획, 디자인 | 19기 강혁진 Front-end</span></span><span class="imageDescriptionSpan">2021 삼성SDS-JA Hackathon 우수상 수상작</span></div>
-    <br>
-    <span class="description">사회적 약자부터 사회 구성원 모두가 편리하게 이용할 수 있는 평등한 키오스크 <span class="hightLightRed">Axis</span>을 개발했습니다.</span>
-    <br>
-    <div class="imageContainer">
-      <div class="imageInner">
-        <img src="resources/images/projects/19/3.png" class="image image2">
-      </div>
-    </div>
-    <div class="imageDescription"><span class="imageDescriptionSpan">스마트 분리수거 플랫폼,<strong>버려버려</strong> <span class="grayText">- 19기 민예담 기획, 디자인 | 19기 이택준 기획, 디자인, Back-end</span><a class="githubLink" href="https://github.com/coding-campas-10" target="_blank"><img class="github" src="resources/images/github.png"></a></span><span class="imageDescriptionSpan">2021 삼성SDS-JA Hackathon 결선 진출작</span></div>
-    <br>
-    <span class="description">올바른 분리수거를 위한 스마트 분리수거 플랫폼 <span class="hightLightRed">버려버려</span>를 개발했습니다.</span>
-    <br>
-    <div class="imageContainer">
-      <div class="imageInner">
-        <img src="resources/images/projects/19/4.png" class="image image2">
-      </div>
-    </div>
-    <div class="imageDescription"><span class="imageDescriptionSpan">AI 기반 도슨팅 서비스,<strong>이게모야</strong> <span class="grayText">- 19기 강혁진 디자인, Front-end | 19기 이택준 디자인, Back-end</span><a class="githubLink" href="https://github.com/igemoya" target="_blank"><img class="github" src="resources/images/github.png"></a></span><span class="imageDescriptionSpan">SK플래닛 2021 STA+C 결선 진출작</span></div>
-    <br>
-    <span class="description">고궁, 미술관, 박물관 등에서 Vision AI를 이용해 도슨팅을 제공하는 서비스 <span class="hightLightRed">이게모야</span>를 개발했습니다.</span>
-    <br>
-    <div class="imageContainer">
-      <div class="imageInner">
         <img src="resources/images/projects/19/8.png" class="image image2">
       </div>
     </div>
     <div class="imageDescription"><span class="imageDescriptionSpan"><strong>당신의 작품을, 널리</strong> <span class="grayText">- 19기 김세령 기획, 디자인</span></span><span class="imageDescriptionSpan">SK플래닛 2020 STA+C 우수상 수상작</span></div>
     <br>
-    <span class="description">무명 예술가들을 세상에 알리고 관람자가 시각적으로 편리함을 느낄 수 있는 온라인 전시회 서비스 <span class="hightLightRed">널리</span>를 개발했습니다.</span>
+    <span class="description">무명 예술가들을 세상에 알리고 관람자가 시각적으로 편리함을 느낄 수 있는 <br>온라인 전시회 서비스 <span class="hightLightRed">널리</span>를 개발했습니다.</span>
     <br>
+    <div class="imageContainer">
+      <div class="imageInner">
+        <img src="resources/images/projects/19/1.png" class="image image2">
+      </div>
+    </div>
+    <div class="imageDescription"><strong>Liber</strong> <span class="grayText">- 19기 김세령 기획, 디자인, 퍼블리싱</span></div>
+    <br>
+    <span class="description">자유롭게 멤버를 모아 북클럽을 만들어 보다 효율적으로 독서 활동을 할 수 있는 북클럽 서비스 <span class="hightLightRed">리버</span>를 개발했습니다.</span>
+    <div class="imageContainer">
+      <div class="imageInner">
+        <img src="resources/images/projects/8.png" class="image image2">
+      </div>
+    </div>
+    <div class="imageDescription">자동 줌 수업 접속 웹페이지, <strong>Online Schedule</strong> <span class="grayText">- 19기 강혁진 디자인, 개발</span><a class="githubLink" href="https://github.com/HyeokjinKang/online-schedule" target="_blank"><img class="github" src="resources/images/github.png"></a></div>
+    <br>
+    <span class="description">2020년, 코로나 19 사태로 인해 전국 모든 학교가 원격으로 수업을 진행하게 되었습니다. 매번 Zoom 코드를 수동으로 입력하여 접속하기 번거로웠던 문제를 해결하기 위해 탄생한 <span class="hightLightRed">Online Schedule</span>은 웹 기반 서비스로, 페이지를 열어두기만 하면 각 반의 시간표에 따라 자동으로 줌 수업에 접속됩니다.</span>
+    <div class="imageContainer">
+      <div class="imageInner">
+        <img src="resources/images/projects/9.png" class="image image2">
+      </div>
+    </div>
+    <span class="description">원격 기간 중, <strong>19기 학생 약 80% 이상</strong>이 이 서비스를 이용해 원격 수업에 접속하였습니다.<br>
     <h2>Artworks</h2>
     <div class="imageContainer">
       <div class="imageInner">
