@@ -30,11 +30,11 @@ const articles = {
     "article": `우리는 2022년에 이런 활동을 할 예정이에요.
     <ol>
       <li>
-        <strong>앱&웹 개발 📱</strong>
-        <dd>- 2022년에는 <span class="hightLightGreen">앱&웹 개발을 위주</span>로 활동할 예정이에요.<br>&nbsp;&nbsp;우리가 상상했던 앱들을 스스로 <span class="hightLightGreen">눈으로 보고 손으로 만질 수 있게 구현</span>할 수 있어요.<br>&nbsp;&nbsp;<span class="hightLightGreen">iOS를 주로 할 예정</span>이고, 맥북이 없어도 된답니다.</dd>
+        <strong>iOS 앱 개발 📱</strong>
+        <dd>- 2022년에는 <span class="hightLightGreen">앱 개발을 위주</span>로 활동할 예정이에요.<br>&nbsp;&nbsp;우리가 상상했던 앱들을 스스로 <span class="hightLightGreen">눈으로 보고 손으로 만질 수 있게 구현</span>할 수 있어요.<br>&nbsp;&nbsp;<span class="hightLightGreen">iOS를 주로 할 예정</span>이고, 맥북이 없어도 된답니다.</dd>
       </li>
       <li>
-        <strong>앱&웹 디자인 🎨</strong>
+        <strong>UI/UX 디자인 🎨</strong>
         <dd>- 유저 친화적인 디자인을 배우고, 여러 인터렉션과 재미있는 요소들을 활용해 <span class="hightLightGreen">다채로운 디자인</span>을 해봐요.<br>&nbsp;&nbsp;여러분이 디자인한 것이 실제 서비스까지 이루어질거에요.</dd>
       </li>
       <li>
@@ -52,7 +52,7 @@ const articles = {
     "subtitle": "당신의 꿈, ASDF와 함께",
     "article": `프로그래밍이나 디자인의 전문가가 아니어도 괜찮습니다.<br>
     ASDF에는 각 분야에 도움을 줄 멤버들이 있습니다.<br>
-    <span class="hightLightYellow">개발의 기초</span>부터 본격적인 앱 및 웹 서비스 개발, Adobe XD, Illustraor과 같은 <span class="hightLightYellow">디자인 툴</span>까지,<br>ASDF가 여러분을 도와줄 수 있습니다.<br>
+    <span class="hightLightYellow">개발의 기초</span>부터 본격적인 앱 서비스 개발, Figma, Xd, Illustraor과 같은 <span class="hightLightYellow">디자인 툴</span>까지,<br>ASDF가 여러분을 도와줄 수 있습니다.<br>
     선배 멘토와 여러분이 크고 작은 팀을 구성하여 여러분의 아이디어가 실현되는 순간을<br>기획단계부터 서비스 런칭 단계까지, <span class="hightLightYellow">모든 부분에 참여할 수 있습니다.</span>`
   },
   "F": {
